@@ -19,10 +19,9 @@ public class MerkleTreeVerify {
          */
         String user_id = "18fc922081c123456eccad04cf52514942b83bb97e50b3a9f9876fa72fefd04c";
         String salt = "9713e8bd";
-        String audit_id = "PR31DEC22";
-        String balances_string = "BTC=1.0000|ETH=2.0000|USDC=3.0000|USDT=4.0000";
-        System.out.println("Merkle Leaf Hash: " + sha256string(user_id + salt + audit_id + balances_string));
-
+        String audit_id = "PR01FEB23";
+        String balances_string = "BTC=0.00142606|ETH=2.0000|USDC=3.0000|USDT=4.0000";
+        System.out.println("Merkle Leaf Hash: 22195ab8ddd4e910e975f04d7d5d50de20b987d04f9ee74bdaca7c2190b495ea" + sha256string(user_id + salt + audit_id + balances_string));
         /*
          * Left child node hash:
          * e5f039b0905c0b6c82bdd7edf6f87ac7b3e983b0124acfaaeb4ed1c05302ec1f
